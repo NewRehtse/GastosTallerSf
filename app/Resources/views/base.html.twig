@@ -1,0 +1,39 @@
+<!-- app/Resources/views/base.html.twig -->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>DevBurgos - - Gestion de gastos - {% block title %}{% endblock %}</title>
+
+        {% block stylesheets %}
+            <link href='http://fonts.googleapis.com/css?family=Irish+Grover' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+            
+            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+			<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        {% endblock %}
+    </head>
+    <body>
+		<div class="container">
+			<div class="row">
+	      		{% block navigation %}
+	      			<a href="{{ path("devb_gastos_homepage") }}">Principal</a>
+				{% endblock %}
+			</div>
+		
+			<div class="row" id="main-body">
+				{% block body %}{% endblock %}
+			</div>
+			
+			<div class="row" id="footer">
+				{% block footer %}{% endblock %}
+			</div>
+		</div>
+        {% block javascripts %}
+        	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        	<script src="{{ asset('bundles/devbgastos/js/jquery-1.11.0.min.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

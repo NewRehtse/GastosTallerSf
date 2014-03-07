@@ -1,0 +1,4 @@
+devb_gastos:
+    resource: "@DevbGastosBundle/Resources/config/routing.yml"
+    prefix:   /
+
