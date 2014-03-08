@@ -24,3 +24,4 @@ Y una vez hecho esto acceder a la ruta:
 
     http://localhost/gastos/web/app_dev.php/
 
+(Suponiendo que en la carpeta gastos se incluyen todos los archivos de este repositorio)
