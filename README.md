@@ -9,7 +9,7 @@ Para instalarlo no he subido al repositorio los vendors, así que habría que us
 
     php composer.phar update
     
-Para la base de datos, la que está configurada en parameters.yml para mysql con los siguientes datos:
+Para la base de datos, la que está configurada en para mysql en el fichero app/config/parameters.yml con los siguientes datos:
 
     database_host: 127.0.0.1
     database_name: gastos
