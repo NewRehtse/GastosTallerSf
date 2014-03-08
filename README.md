@@ -20,6 +20,7 @@ Una vez creas la base de datos y configuras los parámetros, para crear las enti
 
     php app/console doctrine:schema:update --force
     
-Una vez hecho esto basta con acceder a la ruta: 
+Y una vez hecho esto acceder a la ruta: 
 
     http://localhost/gastos/web/app_dev.php/
+
