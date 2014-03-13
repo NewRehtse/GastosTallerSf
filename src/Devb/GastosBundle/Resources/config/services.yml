@@ -1,0 +1,7 @@
+parameters:
+#    devb_gastos.example.class: Devb\GastosBundle\Example
+
+services:
+#    devb_gastos.example:
+#        class: %devb_gastos.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

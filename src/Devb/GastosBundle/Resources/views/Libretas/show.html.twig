@@ -1,0 +1,22 @@
+{% extends 'DevbGastosBundle::layout.html.twig' %}
+
+{% block body %}
+	<h1>Libreta {{libreta.nombre}}</h1>
+	
+	{{libreta.descripcion}}
+	
+	
+	
+	{% if libreta.gastos is empty %}
+		<div class="alert alert-info">
+			No hay gastos en esta libreta.
+		</div>
+	{% endif %}
+	<ul>
+	{% for gasto in libreta.gastos %}
+		<li>{{gasto.concepto}} - {{ gasto.lugar }} - {{ gasto.cantidad }} €</li>
+	{% endfor %}
+	</ul>
+	
+	<a href="{{path("devb_gastos_libreta_add_gasto",{'libretaid': libreta.id})}}" class="btn btn-primary">Añadir gasto</a>
+{% endblock %}

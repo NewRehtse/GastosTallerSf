@@ -1,0 +1,12 @@
+devb_gastos_homepage:
+    pattern:  /
+    defaults: { _controller: DevbGastosBundle:Libreta:index }
+devb_gastos_add_libreta:
+    pattern:  /libreta/add
+    defaults: { _controller: DevbGastosBundle:Libreta:add }
+devb_gastos_ver_libreta:
+    pattern:  /libreta/{libretaid}
+    defaults: { _controller: DevbGastosBundle:Libreta:show }
+devb_gastos_libreta_add_gasto:
+    pattern:  /libreta/add/gasto/{libretaid}
+    defaults: { _controller: DevbGastosBundle:Gasto:add }
